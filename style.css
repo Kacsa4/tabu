@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222222;
+    color: #eeeeee;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.kartya-tarolo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.tabu-kartya {
+    min-width: 50px;
+    min-height: 410px;
+
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #3d2d28;
+    border: 1px solid #e05b49;
+    padding: 40px;
+
+    text-align: center;
+}
+
+.kartya-fejlec {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4px;
+
+    font-size: 13px;
+    color: #e96755;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.kartya-cime {
+    font-size: 23px;
+    color: #eeeeee;
+    margin: 5px 0 20px;
+}
+
+.tiltott-szavak-fejlec {
+    color: #e96755;
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.tiltott-szavak {
+    list-style: none;
+}
+
+.tiltott-szavak li {
+    padding: 4px 0;
+    color: #dddddd;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+
+    .kartya-tarolo {
+        grid-template-columns: 1fr;
+    }
+
+    .tabu-kartya {
+        min-height: 300px;
+        padding: 30px;
+    }
+
+    .kartya-cime {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    main {
+        padding: 5px;
+    }
+
+    .tabu-kartya {
+        padding: 20px;
+        min-height: 250px;
+    }
+
+    .kartya-cime {
+        font-size: 19px;
+    }
+
+    .tiltott-szavak li {
+        font-size: 14px;
+    }
+}
